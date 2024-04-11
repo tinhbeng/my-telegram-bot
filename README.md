@@ -1,8 +1,7 @@
 # my-telegram-bot
-example telegram bot
 
-# Install depedence:
+### Install depedence:
 npm install
 
-# Run:
+### Run:
 node src/index.js
