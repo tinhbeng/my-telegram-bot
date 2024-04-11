@@ -1,10 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios").default;
 
-const { telegram } = require("./utils/notify");
-
 // replace the value below with the Telegram token you receive from @BotFather
 // t.me/my_tbeng_bot
+// API Key
 const token = "6408656135:AAFCJuavnrdd7oA5aDcJ6oYqyYkxJznoKns";
 
 // Create a bot that uses 'polling' to fetch new updates
