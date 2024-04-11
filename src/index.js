@@ -9,18 +9,21 @@ const token = "6408656135:AAFCJuavnrdd7oA5aDcJ6oYqyYkxJznoKns";
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, { polling: true });
 
+// Start bot
 bot.onText(/\/start/, (msg) => {
 
     bot.sendMessage(msg.chat.id, "Welcome!");
 
 });
 
+// use command
 bot.onText(/\/sendpic/, (msg) => {
 
     bot.sendPhoto(msg.chat.id,"https://files.amakuni.com/saru/3896.JPG",{caption : "Here we go ! \nThis is just a caption "} );
 
 });
 
+// Check DM message
 bot.on('message', (msg) => {
 
     var hi = "hi";
